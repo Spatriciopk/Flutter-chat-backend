@@ -1,0 +1,10 @@
+instalamos cors para realizar peticiones
+isntalmos npm i bcryptjs para encriptar contraseñas 
+isntalamos validar campos del fronedt como cotnraseña email --> express-validator
+isntalamos los igueinte para generar jsonwebtoken jsonwebtoken
+instalmos los iguiente para la base de datos mongoose (mongo db)
+
+//https://mongoosejs.com/ link de configuraciones moongo
+
+esto viene de mongo atlas chat es el nombre de la abse se puede cambiar aqui en la url
+mongodb+srv://Patricio:Kastor234567@cluster0.jnjupf4.mongodb.net/chat
