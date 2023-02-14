@@ -24,6 +24,20 @@ const generarJWT = (uid)=>{
     });
 }
 
+const comprobarJWT = (token ="") =>{
+    try {
+        //validamos si encuentra el token debe ser valido de nuestro env y regresamos
+        //el uid para luego saber a que persona estamos escribiendo o coenctado
+        //es decir todo el demas proceso
+        const {uid} = jwt.verify(token,process.env.JWT_KEY);
+        return [true,uid];
+    } catch (error) {
+        return [false,null];
+    }
+}
+
+
 module.exports = {
-    generarJWT
+    generarJWT,
+    comprobarJWT
 }

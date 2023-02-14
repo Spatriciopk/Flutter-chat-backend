@@ -37,7 +37,8 @@ app.use(express.static(publicPath)); //asi ya estoy usando nuestro directorio pu
 
 //Definicion de rutas
 app.use("/api/login",require("./routes/auth"));
-
+app.use("/api/usuarios",require("./routes/usuarios"));
+app.use("/api/mensajes",require("./routes/mensajes"));
 
 //escuchando en el puerto 3000
 // para usar el socket cambiamos por server a app
